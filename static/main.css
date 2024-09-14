@@ -7,5 +7,6 @@ body {
     margin: 0;                 /* Removes default margin */
     flex-direction: column;    /* Stacks elements vertically */
     text-align: center;        /* Centers the text itself */
+    background-color: #fbeece;
 }
 

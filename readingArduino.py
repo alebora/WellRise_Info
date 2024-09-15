@@ -1,5 +1,6 @@
 import serial
 import time
+import json
 
 
 def readserial(comport, baudrate, timestamp=False):
@@ -12,11 +13,13 @@ def readserial(comport, baudrate, timestamp=False):
         data = ser.readline().decode().strip()
 
         if data and timestamp:
-            timestamp = time.strftime('%H:%M:%S')
-            print(f'{timestamp} > {data}')
-            with open("data.json", "a") as f:
+            #timestamp = time.strftime('%H:%M:%S')
+            #print(f'{timestamp} > {data}')
+            print(data)
+            with open("tempdata.json", "a") as f:
                 f.write(data)
 
+#print(existing_data)
 
 if __name__ == '__main__':
     readserial('/dev/tty.usbmodem101', 9600, True)  

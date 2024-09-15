@@ -1,0 +1,35 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    /* font-weight: 800; */
+    color: #411E06;
+    display: flex;
+    justify-content: center;   /* Centers content horizontally */
+    align-items: center;       /* Centers content vertically */
+    /* height: 100vh;               */
+    /* margin: 150px;;                  */
+    flex-direction: column;    /* Stacks elements vertically */
+    text-align: center;        /* Centers the text itself */
+    background-color: #FBEECE
+}
+
+.box {
+    background-color: #4b2d19;
+    margin: 0;
+    color: white;
+    padding: 0px;
+    /* border-radius: 10px; */
+    /* text-align: center; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    align-items: left;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    align-items: right;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WellRise</title>
+
+    <!-- imported fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+
+    <style>
+        .container {
+            background-color: #4b2d19;
+            margin: 0;
+            color: #FBEECE;
+            padding: 0px;
+            border: 1px solid #4b2d19;
+            /* border-radius: 10px; */
+            /* text-align: center; */
+            /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+        }
+        .inner-container {
+            display: flex;
+            justify-content: space-between; /* Space between the two text boxes */
+        }
+
+        .text-box1 {
+            flex: 0 0 40%; /* Each text takes up 48% of the container */
+        }
+        .text-box2{
+            flex: 0 0 60%
+        }
+        p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+    </style>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='wellriseInfo.css') }}">
+</head>
+<body style="margin: 0; padding: 0;">
+    <header>
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" style="width: 40%; height: auto;">
+    </header>   
+    <h1 style="font-size: 76px; padding:5px; margin: 0;">About WellRise</h1>
+    <h3 style="font-size: 25px; padding:5px; margin: 0;">Let the goose guide your way to wellness!</h3>
+    <style>
+        p {
+            text-align: left;
+            margin-bottom: 20px; /* Adjust spacing between paragraphs as needed */
+            font-family: 'Avenir Light', Arial, sans-serif;
+            font-size: 15px;
+            padding: 0px;
+            margin-left: 100px;  /* Adjust the left margin */
+            margin-right: 100px;
+        }
+    </style>
+    <br>
+    <p>In today’s fast-paced world, people often neglect their most basic need: sleep. The constant pressure to stay productive leads many to sacrifice rest, even though research from the Mayo Clinic shows that adults need at least 7 hours of sleep to function at their best.<br><br>
+        But when sleep takes a back seat, it doesn’t just cause fatigue—long-term sleep deprivation can lead to serious health problems like weakened immunity, cognitive decline, and a higher risk of heart disease and diabetes.<br><br>        
+        One simple way to tackle this? Sleep tracking! Studies show that tracking your habits helps you make better decisions. By becoming more aware of sleep patterns, people can spot issues and make changes to improve their rest.<br><br>
+        However, almost all the current sleep tracking technologies require the consumer to report their sleeping time and waking time to a screen. Which poses another problem, increased screen time.</align></p>
+
+        <br>
+        <br>
+        <div class="container">
+            <div class="inner-container">
+                <div class="text-box1">
+                    <p style="font-family: 'Cormorant Garamond', serif; font-size: 2.65em;margin-bottom: 10px; align-items: left;">Enter: <br> The WellRise Clock!</p>
+                </div>
+                <div class="text-box2">
+                    <br><br>
+                    <p style="font-family: 'Avenir Light', Arial, sans-serif; font-size: 18px;;margin-bottom: 10px; align-items: left;">Say goodbye to screen-based sleep tracking! The WellRise Clock is a game-changer. Designed as a cute, friendly goose, it tracks your sleep with a simple tap—no screens, no apps, just a quick tap on its head.</p>
+                    <hr style="color: #FBEECE; width: 450px;">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="text-box2">
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 2em;margin-bottom: 10px; align-items: left;">Why WellRise?</p>
+
+            <p style="font-family: 'Avenir Light', Arial, sans-serif; font-size: 15px;;margin-bottom: 10px; align-items: left;">The simplicity of a tap, the beauty of avoiding screens, and the joy of waking up to a happy little goose—what’s not to love? The WellRise Clock makes sleep tracking fun and easy, all while helping you maintain a healthy sleep cycle.</p>
+
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 2em;margin-bottom: 10px; align-items: left;">How Does it Work?</p>
+            <p style="font-family: 'Avenir Light', Arial, sans-serif; font-size: 15px;;margin-bottom: 10px; align-items: left;">Before sleep: Tap the goose’s head to start tracking.<br>
+
+                When you wake up: Tap again, and voilà! Your sleep data is logged—no fuss, no blue light.</p>
+
+            
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 2em;margin-bottom: 10px; align-items: left;">A Smile to Start Your Day!</p>
+            <p style="font-family: 'Avenir Light', Arial, sans-serif; font-size: 15px;;margin-bottom: 10px; align-items: left;">The WellRise Clock isn’t just functional—it’s fun too! The design adds a bit of joy to your morning routine, greeting you with a smile as soon as you wake up. It’s like a personal cheerleader for your sleep!</p>
+        </div>
+
+    <footer><br><br><br><br><br><br></footer>
+    <a href="/">Go back</a>
+</body>
+</html>

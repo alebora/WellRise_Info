@@ -2,15 +2,70 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Flask App</title>
-</head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>WellRise Sleep</title>
+        
+            <!-- imported fonts -->
+            <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+        </head>
 <body>
     <h1>Welcome!</h1>
-    <form action="/submit" method="post">
-        <label for="user_input">Enter something:</label>
-        <input type="text" id="user_input" name="user_input">
-        <input type="submit" value="Submit">
+    <form action="/second" method="post">
+        <button type="second">Go to Second Page</button>
+
     </form>
+        <!-- <label for="user_input">Time slept: {{ time_difference }}</label> --> 
+        
+        <body style="margin: 0; padding: 0;">
+        
+            <header>
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="logo" style="width: 50%; height: auto;">
+            </header> 
+        
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 70px;margin-bottom: 10px; align-items: left; margin: 0;">TOTAL SLEEP TODAY</p>
+            
+            <!-- Hours labeling: the amount that a person slept -->
+        
+            <div class="sleep-tracker">
+                <!-- Sleep Duration Display -->
+                <div class="hours" id="hoursDisplay">{{ time_difference }} hrs / 8 hrs</div>
+                
+                <!-- Progress Bar -->
+                <div class="progress-bar">
+                    <div class="progress" id="progressBar" style="width:75%;"> </div>
+                </div>
+                
+                <!-- Time Labels -->
+                <div class="time-labels">
+                    <span id="startTime">{{ time1 }}</span>
+                    <span id="endTime">{{ time2 }}</span>
+                </div>
+                
+                <!-- Rating Smiley Faces -->
+                 <p style="font-family: Avenir; font-size: 23px;"> How would you rate your sleep today?</p>
+                <div class="smileys">
+                    <span class="smiley" onclick="showMessage('Great! You had a good rest.')"><img src="{{ url_for('static', filename='images/smiley.png') }}" style="width: 50%; height: auto;"></span>
+                    <span class="smiley" onclick="showMessage('Oh, thats ok. Maybe try to sleep earlier.')"><img src="{{ url_for('static', filename='images/eh.png') }}" style="width: 50%; height: auto;"></span>
+                    <span class="smiley" onclick="showMessage('You should try to get more sleep.')"><img src="{{ url_for('static', filename='images/sad.png') }}" style="width: 50%; height: auto;"></span>
+                </div>
+                
+                <!-- Message Display -->
+                <div class="message" id="messageDisplay"></div>
+            </div>
+            
+            <script>
+                
+                // Function to show a message when a smiley is clicked
+                function showMessage(message) {
+                    document.getElementById('messageDisplay').innerText = message;
+                }
+            
+            </script>
+        
+        
+        </body>
+        </html>
+
 </body>
 </html>

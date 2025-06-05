@@ -1,6 +1,8 @@
-# WellRise  
-
-**WellRise** is a wellness and sleep enhancement app designed to empower users with actionable insights and tools for improving their daily routines. Built with a focus on usability and a charming goose mascot, WellRise combines wellness science with engaging design.  
+# WellRise 🪿 
+<p>
+WellRise is a wellness and sleep enhancement app designed to empower users with actionable insights and tools for improving their daily routines. Built with a focus on usability and a charming goose mascot, WellRise combines wellness science with engaging design.  
+</p>
+<img width="650" alt="wellrise" src="https://github.com/alebora/WellRise_Info/blob/main/static/images/wellRisePhysical.png">
 
 ### Core Features
 
